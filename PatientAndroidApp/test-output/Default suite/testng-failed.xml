@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.patientapp.tests.ServicesTests">
+        <methods>
+          <include name="testVerifyBookPharmacy"/>
+          <include name="cleanUp"/>
+          <include name="testVerifyAddAttendantsAppointment"/>
+          <include name="setUp"/>
+          <include name="initPageObjects"/>
+          <include name="ensureServicePage"/>
+          <include name="testVerifyAddPostNatalCareAppointment"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.ServicesTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PatientAppSmokeTestScenarios]">
+  <test name="SmokeTestSuite(failed)">
+    <classes>
+      <class name="com.patientapp.tests.ServicesTests">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="testVerifyAddNursingAppointment"/>
+          <include name="testVerifyAddAttendantsAppointment"/>
+          <include name="initPageObjects"/>
+          <include name="ensureServicePage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.ServicesTests -->
+      <class name="com.patientapp.tests.RegistrationTests">
+        <methods>
+          <include name="ensureRegistrationPage"/>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+          <include name="initPageObjects"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.RegistrationTests -->
+      <class name="com.patientapp.tests.AccountTests">
+        <methods>
+          <include name="TC_35_testVerifyUserAbleToAddWallet"/>
+          <include name="ensureAccountPage"/>
+          <include name="initPageObjects"/>
+          <include name="TC_35_testVerifyUserAbleToLoadWalletBySavedCard"/>
+          <include name="TC_35_testVerifyUserAbleToViewWallet"/>
+          <include name="TC_32_testVerifyPaidUnpaidAndUnbilledAppointments"/>
+          <include name="cleanUp"/>
+          <include name="testVerifyUserAbleToPayThroughWallet"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.AccountTests -->
+      <class name="com.patientapp.tests.MoreOptionsTests">
+        <methods>
+          <include name="TC_27_testVerifyUserShouldAbleToSubmitFeedback"/>
+          <include name="initPageObjects"/>
+          <include name="TC_29_testVerifyAllAppointmentsVisibilitiesOnMyAppointments"/>
+          <include name="ensureMoreOptionsPage"/>
+          <include name="cleanUp"/>
+          <include name="TC_24_testVerifyGeneralQueriesFAQVisibility"/>
+          <include name="setUp"/>
+          <include name="TC_28_testVerifyContactUsOption"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.MoreOptionsTests -->
+      <class name="com.patientapp.tests.HealthFeedTests">
+        <methods>
+          <include name="ensureHealthFeedPage"/>
+          <include name="TC_22_testVerifyUserShouldAbleToLikeArticle"/>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+          <include name="TC_21_testVerifyUserShouldAbleToSeeSelectedFeedDetails"/>
+          <include name="initPageObjects"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.HealthFeedTests -->
+      <class name="com.patientapp.tests.LoginTests">
+        <methods>
+          <include name="initPageObjects"/>
+          <include name="cleanUp"/>
+          <include name="ensureLoginPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.LoginTests -->
+      <class name="com.patientapp.tests.HomeScreenTests">
+        <methods>
+          <include name="ensureHomeScreenPage"/>
+          <include name="initPageObjects"/>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.patientapp.tests.HomeScreenTests -->
+    </classes>
+  </test> <!-- SmokeTestSuite(failed) -->
+</suite> <!-- Failed suite [PatientAppSmokeTestScenarios] -->

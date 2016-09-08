@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">SmokeTestSuite</td><td class="numi">23</td><td class="numi">23</td><td class="numi">0</td><td class="numi_attn">13</td><td class="numi">2,848.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">SmokeTestSuite &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.patientapp.tests.HealthFeedTests</td><td><a href="#m1"><b>TC_21_testVerifyUserShouldAbleToSeeSelectedFeedDetails</b>  </a></td><td class="numi">1</td><td>1473318395300</td><td class="numi">46729</td></tr><tr class="failedodd"><td><a href="#m2"><b>TC_22_testVerifyUserShouldAbleToLikeArticle</b>  </a></td><td class="numi">1</td><td>1473318472435</td><td class="numi">43253</td></tr>
+<tr class="failedeven"><td rowspan="5">com.patientapp.tests.AccountTests</td><td><a href="#m3"><b>TC_32_testVerifyPaidUnpaidAndUnbilledAppointments</b>  </a></td><td class="numi">1</td><td>1473318671346</td><td class="numi">10124</td></tr><tr class="failedeven"><td><a href="#m4"><b>TC_35_testVerifyUserAbleToAddWallet</b>  </a></td><td class="numi">1</td><td>1473318711940</td><td class="numi">0</td></tr><tr class="failedeven"><td><a href="#m5"><b>TC_35_testVerifyUserAbleToLoadWalletBySavedCard</b>  </a></td><td class="numi">1</td><td>1473318741863</td><td class="numi">10179</td></tr><tr class="failedeven"><td><a href="#m6"><b>TC_35_testVerifyUserAbleToViewWallet</b>  </a></td><td class="numi">1</td><td>1473318782334</td><td class="numi">10266</td></tr><tr class="failedeven"><td><a href="#m7"><b>testVerifyUserAbleToPayThroughWallet</b>  </a></td><td class="numi">1</td><td>1473319221800</td><td class="numi">73564</td></tr>
+<tr class="failedodd"><td rowspan="2">com.patientapp.tests.ServicesTests</td><td><a href="#m8"><b>testVerifyAddAttendantsAppointment</b>  </a></td><td class="numi">1</td><td>1473319357467</td><td class="numi">10148</td></tr><tr class="failedodd"><td><a href="#m9"><b>testVerifyAddNursingAppointment</b>  </a></td><td class="numi">1</td><td>1473319529829</td><td class="numi">74921</td></tr>
+<tr class="failedeven"><td rowspan="4">com.patientapp.tests.MoreOptionsTests</td><td><a href="#m10"><b>TC_24_testVerifyGeneralQueriesFAQVisibility</b>  </a></td><td class="numi">1</td><td>1473319945373</td><td class="numi">18996</td></tr><tr class="failedeven"><td><a href="#m11"><b>TC_27_testVerifyUserShouldAbleToSubmitFeedback</b>  </a></td><td class="numi">1</td><td>1473320136285</td><td class="numi">34713</td></tr><tr class="failedeven"><td><a href="#m12"><b>TC_28_testVerifyContactUsOption</b>  </a></td><td class="numi">1</td><td>1473320201753</td><td class="numi">38705</td></tr><tr class="failedeven"><td><a href="#m13"><b>TC_29_testVerifyAllAppointmentsVisibilitiesOnMyAppointments</b>  </a></td><td class="numi">1</td><td>1473320270960</td><td class="numi">33452</td></tr>
+<tr><th colspan="4">SmokeTestSuite &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.patientapp.tests.LoginTests</td><td><a href="#m14"><b>TC_6_testVerifyLoginWithOutRegistration</b>  </a></td><td class="numi">1</td><td>1473317517846</td><td class="numi">27180</td></tr><tr class="passedodd"><td><a href="#m15"><b>testVerifyLoginFunctionality</b>  </a></td><td class="numi">1</td><td>1473317574876</td><td class="numi">28216</td></tr><tr class="passedodd"><td><a href="#m16"><b>testVerifyLoginScreenElementsVisibility</b>  </a></td><td class="numi">1</td><td>1473317634142</td><td class="numi">2000</td></tr>
+<tr class="passedeven"><td rowspan="10">com.patientapp.tests.HomeScreenTests</td><td><a href="#m17"><b>TC_29_testVerifyAllappointmentsVisibility</b>  </a></td><td class="numi">1</td><td>1473317695347</td><td class="numi">37645</td></tr><tr class="passedeven"><td><a href="#m18"><b>TC_30_testVerifyMyHealthRecordsVisibility</b>  </a></td><td class="numi">1</td><td>1473317763009</td><td class="numi">33883</td></tr><tr class="passedeven"><td><a href="#m19"><b>TC_31_testVerifyBookMarkedArticlesVisibility</b>  </a></td><td class="numi">1</td><td>1473317827101</td><td class="numi">35890</td></tr><tr class="passedeven"><td><a href="#m20"><b>TC_34_testVerifyTransactionHistoryVisibility</b>  </a></td><td class="numi">1</td><td>1473317893528</td><td class="numi">40851</td></tr><tr class="passedeven"><td><a href="#m21"><b>TC_35_testVerifyWallet</b>  </a></td><td class="numi">1</td><td>1473317964324</td><td class="numi">39659</td></tr><tr class="passedeven"><td><a href="#m22"><b>TC_36_testVerifyPharmacyOrderAndPrescriptionsVisibility</b>  </a></td><td class="numi">1</td><td>1473318033934</td><td class="numi">46172</td></tr><tr class="passedeven"><td><a href="#m23"><b>TC_38_testVerifyPorteaCherishScreenVisibility</b>  </a></td><td class="numi">1</td><td>1473318110737</td><td class="numi">40383</td></tr><tr class="passedeven"><td><a href="#m24"><b>TC_6_testVerifyMoreAndNotificationOption</b>  </a></td><td class="numi">1</td><td>1473318181118</td><td class="numi">38466</td></tr><tr class="passedeven"><td><a href="#m25"><b>testVerifyAllMenuScreensVisibility</b>  </a></td><td class="numi">1</td><td>1473318249867</td><td class="numi">37424</td></tr><tr class="passedeven"><td><a href="#m26"><b>testVerifyWithoutLogin</b>  </a></td><td class="numi">1</td><td>1473318317270</td><td class="numi">17435</td></tr>
+<tr class="passedodd"><td rowspan="1">com.patientapp.tests.RegistrationTests</td><td><a href="#m27"><b>testVerifyPatientRegistration</b>  </a></td><td class="numi">1</td><td>1473318576048</td><td class="numi">33911</td></tr>
+<tr class="passedeven"><td rowspan="3">com.patientapp.tests.AccountTests</td><td><a href="#m28"><b>testVerifyUserAbleToPayThroughCards</b>  </a></td><td class="numi">1</td><td>1473318822785</td><td class="numi">128917</td></tr><tr class="passedeven"><td><a href="#m29"><b>testVerifyUserAbleToPayThroughNetbanking</b>  </a></td><td class="numi">1</td><td>1473318981589</td><td class="numi">72201</td></tr><tr class="passedeven"><td><a href="#m30"><b>testVerifyUserAbleToPayThroughPaytm</b>  </a></td><td class="numi">1</td><td>1473319084259</td><td class="numi">106816</td></tr>
+<tr class="passedodd"><td rowspan="3">com.patientapp.tests.ServicesTests</td><td><a href="#m31"><b>testVerifyAddElderCareAppointment</b>  </a></td><td class="numi">1</td><td>1473319397816</td><td class="numi">101075</td></tr><tr class="passedodd"><td><a href="#m32"><b>testVerifyAddPostNatalCareAppointment</b>  </a></td><td class="numi">1</td><td>1473319635146</td><td class="numi">79350</td></tr><tr class="passedodd"><td><a href="#m33"><b>testVerifyBookVaccination</b>  </a></td><td class="numi">1</td><td>1473319745070</td><td class="numi">75395</td></tr>
+<tr class="passedeven"><td rowspan="3">com.patientapp.tests.MoreOptionsTests</td><td><a href="#m34"><b>TC_23_testVerifyOfferPromotionsVisibility</b>  </a></td><td class="numi">1</td><td>1473319881256</td><td class="numi">33104</td></tr><tr class="passedeven"><td><a href="#m35"><b>TC_25_testVerifyRateUsScreenVisibility</b>  </a></td><td class="numi">1</td><td>1473319995382</td><td class="numi">32890</td></tr><tr class="passedeven"><td><a href="#m36"><b>TC_26_testVerifyAboutUsScreenVisibility</b>  </a></td><td class="numi">1</td><td>1473320069604</td><td class="numi">35469</td></tr>
+</table>
+<h1>SmokeTestSuite</h1>
+<h2 id="m1">com.patientapp.tests.MoreOptionsTests:TC_27_testVerifyUserShouldAbleToSubmitFeedback</h2>
+<div style="padding-left:3em">
+<p>Missing parameters: [&quot;selector&quot;]
+Command duration or timeout: 12 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=}
+Session ID: dca88b8e-70d5-4113-806d-f0fad9ebdcc6
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.MoreOptionsPage.submitFeedback(MoreOptionsPage.java:140)
+<br/>at com.patientapp.tests.MoreOptionsTests.TC_27_testVerifyUserShouldAbleToSubmitFeedback(MoreOptionsTests.java:119)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.patientapp.tests.ServicesTests:testVerifyAddNursingAppointment</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35.84 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(&quot;Nursing&quot;).instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(&quot;Nursing&quot;).instance(0));}
+Session ID: 0a084ad2-318c-49cd-9886-52449f131af8
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:255)
+<br/>at io.appium.java_client.android.AndroidDriver.scrollToExact(AndroidDriver.java:65)
+<br/>at com.patientapp.tests.ServicesTests.testVerifyAddNursingAppointment(ServicesTests.java:214)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.patientapp.tests.MoreOptionsTests:TC_29_testVerifyAllAppointmentsVisibilitiesOnMyAppointments</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.patientapp.tests.MoreOptionsTests.TC_29_testVerifyAllAppointmentsVisibilitiesOnMyAppointments(MoreOptionsTests.java:156)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.patientapp.tests.HealthFeedTests:TC_21_testVerifyUserShouldAbleToSeeSelectedFeedDetails</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=name, value=filter}
+Session ID: efcfd15d-7845-4f80-aa8f-b68870071c0c
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+<br/>at org.openqa.selenium.By$ByName.findElement(By.java:303)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.HealthFeedPage.onClickFilter(HealthFeedPage.java:67)
+<br/>at com.patientapp.tests.HealthFeedTests.TC_21_testVerifyUserShouldAbleToSeeSelectedFeedDetails(HealthFeedTests.java:63)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.patientapp.tests.MoreOptionsTests:TC_28_testVerifyContactUsOption</h2>
+<div style="padding-left:3em">
+<p>Missing parameters: [&quot;selector&quot;]
+Command duration or timeout: 6 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=}
+Session ID: dca88b8e-70d5-4113-806d-f0fad9ebdcc6
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.MoreOptionsPage.submitFeedback(MoreOptionsPage.java:140)
+<br/>at com.patientapp.tests.MoreOptionsTests.TC_28_testVerifyContactUsOption(MoreOptionsTests.java:139)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.patientapp.tests.AccountTests:TC_32_testVerifyPaidUnpaidAndUnbilledAppointments</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=com.weecode.portea.stage:id/tv_mobile_no}
+Session ID: b0e22c49-b588-4b1d-b120-bc6a9303b0cf
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.LoginPage.login(LoginPage.java:79)
+<br/>at com.patientapp.tests.AccountTests.TC_32_testVerifyPaidUnpaidAndUnbilledAppointments(AccountTests.java:107)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.patientapp.tests.AccountTests:TC_35_testVerifyUserAbleToLoadWalletBySavedCard</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.18 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=com.weecode.portea.stage:id/tv_mobile_no}
+Session ID: b0e22c49-b588-4b1d-b120-bc6a9303b0cf
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.LoginPage.login(LoginPage.java:79)
+<br/>at com.patientapp.tests.AccountTests.TC_35_testVerifyUserAbleToLoadWalletBySavedCard(AccountTests.java:92)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.patientapp.tests.MoreOptionsTests:TC_24_testVerifyGeneralQueriesFAQVisibility</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.45 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=com.weecode.portea.stage:id/tv_mobile_no}
+Session ID: dca88b8e-70d5-4113-806d-f0fad9ebdcc6
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.LoginPage.login(LoginPage.java:79)
+<br/>at com.patientapp.tests.MoreOptionsTests.TC_24_testVerifyGeneralQueriesFAQVisibility(MoreOptionsTests.java:72)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.patientapp.tests.HealthFeedTests:TC_22_testVerifyUserShouldAbleToLikeArticle</h2>
+<div style="padding-left:3em">
+<p>Index: 0, Size: 0</p>
+java.util.ArrayList.rangeCheck(ArrayList.java:635)
+<br/>at java.util.ArrayList.get(ArrayList.java:411)
+<br/>at com.patientapp.pages.HealthFeedPage.likeArticle(HealthFeedPage.java:86)
+<br/>at com.patientapp.tests.HealthFeedTests.TC_22_testVerifyUserShouldAbleToLikeArticle(HealthFeedTests.java:82)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.patientapp.tests.ServicesTests:testVerifyAddAttendantsAppointment</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=com.weecode.portea.stage:id/skip}
+Session ID: 0a084ad2-318c-49cd-9886-52449f131af8
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.LoginPage.skip(LoginPage.java:72)
+<br/>at com.patientapp.tests.ServicesTests.testVerifyAddAttendantsAppointment(ServicesTests.java:240)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.patientapp.tests.AccountTests:testVerifyUserAbleToPayThroughWallet</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.34 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=com.weecode.portea.stage:id/proceedButton}
+Session ID: b0e22c49-b588-4b1d-b120-bc6a9303b0cf
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.AccountPage.payByWallet(AccountPage.java:315)
+<br/>at com.patientapp.tests.AccountTests.testVerifyUserAbleToPayThroughWallet(AccountTests.java:179)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.patientapp.tests.AccountTests:TC_35_testVerifyUserAbleToAddWallet</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.patientapp.tests.AccountTests.TC_35_testVerifyUserAbleToAddWallet(AccountTests.java:63)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.patientapp.tests.AccountTests:TC_35_testVerifyUserAbleToViewWallet</h2>
+<div style="padding-left:3em">
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.26 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+*** Element info: {Using=id, value=com.weecode.portea.stage:id/tv_mobile_no}
+Session ID: b0e22c49-b588-4b1d-b120-bc6a9303b0cf
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, javascriptEnabled=true, appActivity=com.weecode.portea.activities.SplashActivity, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=600, automationName=Appium, app=C:\Users\sapna\Documents\workspace\PatientAndroidApp\src\test\resources\android\PA-4.0-stage-armeabi-v7a-release.apk, platformVersion=21.0, deviceName=Micromax Q450, platformName=Android, appActivity=com.weecode.portea.activities.SplashActivity, appWaitActivity=com.weecode.portea.activities.SplashActivity, appPackage=com.weecode.portea.stage}, locationContextEnabled=false, appPackage=com.weecode.portea.stage, newCommandTimeout=600, platformVersion=5.0.2, databaseEnabled=false, deviceName=386b462, platformName=Android, appWaitActivity=com.weecode.portea.activities.SplashActivity, webStorageEnabled=false, warnings={}, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at com.patientapp.pages.LoginPage.login(LoginPage.java:79)
+<br/>at com.patientapp.tests.AccountTests.TC_35_testVerifyUserAbleToViewWallet(AccountTests.java:79)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.patientapp.tests.HomeScreenTests:TC_30_testVerifyMyHealthRecordsVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.patientapp.tests.AccountTests:testVerifyUserAbleToPayThroughCards</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.patientapp.tests.HomeScreenTests:TC_6_testVerifyMoreAndNotificationOption</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.patientapp.tests.MoreOptionsTests:TC_25_testVerifyRateUsScreenVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.patientapp.tests.LoginTests:testVerifyLoginScreenElementsVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.patientapp.tests.HomeScreenTests:TC_36_testVerifyPharmacyOrderAndPrescriptionsVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.patientapp.tests.HomeScreenTests:testVerifyWithoutLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.patientapp.tests.ServicesTests:testVerifyAddPostNatalCareAppointment</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.patientapp.tests.HomeScreenTests:TC_38_testVerifyPorteaCherishScreenVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.patientapp.tests.AccountTests:testVerifyUserAbleToPayThroughPaytm</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.patientapp.tests.HomeScreenTests:TC_34_testVerifyTransactionHistoryVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.patientapp.tests.LoginTests:testVerifyLoginFunctionality</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.patientapp.tests.MoreOptionsTests:TC_26_testVerifyAboutUsScreenVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.patientapp.tests.HomeScreenTests:TC_35_testVerifyWallet</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.patientapp.tests.ServicesTests:testVerifyBookVaccination</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.patientapp.tests.HomeScreenTests:testVerifyAllMenuScreensVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.patientapp.tests.HomeScreenTests:TC_29_testVerifyAllappointmentsVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.patientapp.tests.HomeScreenTests:TC_31_testVerifyBookMarkedArticlesVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.patientapp.tests.ServicesTests:testVerifyAddElderCareAppointment</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.patientapp.tests.MoreOptionsTests:TC_23_testVerifyOfferPromotionsVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.patientapp.tests.RegistrationTests:testVerifyPatientRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.patientapp.tests.LoginTests:TC_6_testVerifyLoginWithOutRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.patientapp.tests.AccountTests:testVerifyUserAbleToPayThroughNetbanking</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

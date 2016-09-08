@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="PatientAppSmokeTestScenarios">
+	<test name="SmokeTestSuite">
+		<classes>
+		    <class name="com.patientapp.tests.LoginTests"/>
+		    <class name="com.patientapp.tests.HomeScreenTests"/>
+		    <class name="com.patientapp.tests.HealthFeedTests"/>
+		    <class name="com.patientapp.tests.RegistrationTests"/>
+		    <class name="com.patientapp.tests.AccountTests"/>
+		    <class name="com.patientapp.tests.ServicesTests"/>
+		    <class name="com.patientapp.tests.MoreOptionsTests"/>
+        </classes>
+	</test>
+ 
+</suite> 	
